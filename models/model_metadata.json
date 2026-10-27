@@ -1,0 +1,82 @@
+{
+    "timestamp": "2026-10-27T12:40:51.111528",
+    "model_type": "Logistic Regression (Pipeline)",
+    "train_samples": 616,
+    "test_samples": 154,
+    "metrics": {
+        "accuracy": 0.7078,
+        "sensitivity_recall": 0.5,
+        "specificity": 0.82,
+        "precision_ppv": 0.6,
+        "f1_score": 0.5455,
+        "roc_auc": 0.813,
+        "pr_auc": 0.6733
+    },
+    "confusion_matrix": {
+        "true_negatives": 82,
+        "false_positives": 18,
+        "false_negatives": 27,
+        "true_positives": 27
+    },
+    "features": [
+        "Pregnancies",
+        "Glucose",
+        "BloodPressure",
+        "SkinThickness",
+        "Insulin",
+        "BMI",
+        "DiabetesPedigreeFunction",
+        "Age"
+    ],
+    "feature_impact": [
+        {
+            "feature": "Pregnancies",
+            "coefficient": 0.3774,
+            "odds_ratio": 1.4586,
+            "interpretation": "1 standard deviation increase multiplies diabetes odds by 1.46x"
+        },
+        {
+            "feature": "Glucose",
+            "coefficient": 1.1826,
+            "odds_ratio": 3.2627,
+            "interpretation": "1 standard deviation increase multiplies diabetes odds by 3.26x"
+        },
+        {
+            "feature": "BloodPressure",
+            "coefficient": -0.0441,
+            "odds_ratio": 0.9568,
+            "interpretation": "1 standard deviation increase reduces diabetes odds by 1.05x"
+        },
+        {
+            "feature": "SkinThickness",
+            "coefficient": 0.0283,
+            "odds_ratio": 1.0287,
+            "interpretation": "1 standard deviation increase multiplies diabetes odds by 1.03x"
+        },
+        {
+            "feature": "Insulin",
+            "coefficient": -0.0661,
+            "odds_ratio": 0.936,
+            "interpretation": "1 standard deviation increase reduces diabetes odds by 1.07x"
+        },
+        {
+            "feature": "BMI",
+            "coefficient": 0.6887,
+            "odds_ratio": 1.991,
+            "interpretation": "1 standard deviation increase multiplies diabetes odds by 1.99x"
+        },
+        {
+            "feature": "DiabetesPedigreeFunction",
+            "coefficient": 0.2333,
+            "odds_ratio": 1.2628,
+            "interpretation": "1 standard deviation increase multiplies diabetes odds by 1.26x"
+        },
+        {
+            "feature": "Age",
+            "coefficient": 0.1478,
+            "odds_ratio": 1.1593,
+            "interpretation": "1 standard deviation increase multiplies diabetes odds by 1.16x"
+        }
+    ],
+    "clinical_disclaimer": "For educational/research purposes only. Not clinically validated."
+}
